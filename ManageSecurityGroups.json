@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ModifySecurityGroupRules",
+      "Effect": "Allow",
+      "Action": "ec2:ModifySecurityGroupRules",
+      "Resource": [
+        "arn:aws:ec2:*:199492970066:security-group-rule/*",
+        "arn:aws:ec2:*:199492970066:security-group/*"
+      ]
+    },
+    {
+      "Sid": "DescribeSecurityGroupRules",
+      "Effect": "Allow",
+      "Action": "ec2:DescribeSecurityGroupRules",
+      "Resource": "*"
+    }
+  ]
+}
